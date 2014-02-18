@@ -2,14 +2,14 @@ function poweroff(cb)
 {
 	var util = require('util');
 	var exec = require('child_process').exec;
-	exec('/usr/bin/sudo poweroff', function (err, stdout, stderr) { cb(); });
+	exec('/usr/bin/sudo poweroff', function () { cb(); });
 }
 
 function reboot(cb)
 {
 	var util = require('util');
 	var exec = require('child_process').exec;
-	exec('/usr/bin/sudo reboot', function (err, stdout, stderr) { cb(); });
+	exec('/usr/bin/sudo reboot', function () { cb(); });
 }
 
 exports.data = function (cb) {
@@ -35,4 +35,4 @@ exports.manage_post = function (post, cb) {
 
 exports.columns = 1;
 exports.title = "Power";
-//exports.updatetime = -1;
+exports.updatetime = -1;
