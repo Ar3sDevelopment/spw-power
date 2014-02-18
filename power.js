@@ -33,6 +33,6 @@ exports.manage_post = function (post, cb) {
 	}
 };
 
-exports.columns = 1;
+exports.columns = 2;
 exports.title = "Power";
 exports.updatetime = -1;
