@@ -32,3 +32,7 @@ exports.manage_post = function (post, cb) {
 		cb(0, null);
 	}
 };
+
+exports.columns = 1;
+exports.title = "Power";
+//exports.updatetime = -1;
