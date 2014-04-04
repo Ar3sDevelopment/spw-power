@@ -6,11 +6,11 @@ script(type="text/javascript").
 	$(document).ready(function () {
 		$('#btnPowerOff').click(function () {
 			if (confirm('Are you sure you want to shutdown?'))
-				$.sendPostDataToWidget(socket, #{user_widget.id}, '#{sid}', { po: true });
+				$.sendPostDataToWidget(socket, #{user_widget.id}, '#{username}', { po: true });
 		});
 
 		$('#btnPowerReset').click(function () {
 			if (confirm('Are you sure you want to reboot?'))
-				$.sendPostDataToWidget(socket, #{user_widget.id}, '#{sid}', { pr: true });
+				$.sendPostDataToWidget(socket, #{user_widget.id}, '#{username}', { pr: true });
 		});
 	});
